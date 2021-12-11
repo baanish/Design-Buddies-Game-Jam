@@ -36,7 +36,9 @@ public class Spawner : MonoBehaviour
 
             spawnedFood = Instantiate(foodToSpawn[foodToSpawnIndex], transform.position, transform.rotation);
 
-            spawnedFood.GetComponent<Rigidbody>().AddForce(Vector3.up * force);
+            
+
+            spawnedFood.GetComponent<Rigidbody>().AddRelativeForce(Vector3.up * force);
 
             timeBetweenFoods += timeBetweenFoods2;
         }
