@@ -7,7 +7,8 @@ public class FruitCutter : MonoBehaviour
 
     [SerializeField] GameObject cutFruit;
     [SerializeField] float force;
-   [SerializeField] float explosionRadius;
+    [SerializeField] float explosionRadius;
+    
 
 
     GameObject spawnedFood;
@@ -37,12 +38,11 @@ public class FruitCutter : MonoBehaviour
                 rb2.AddExplosionForce(force,spawnedFood.transform.position,explosionRadius);
             }
 
-
-
-
             Destroy(gameObject, 0);
 
-           
+
         }
+
+        
     }
 }
