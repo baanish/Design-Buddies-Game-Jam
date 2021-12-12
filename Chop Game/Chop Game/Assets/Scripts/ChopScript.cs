@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class ChopScript : MonoBehaviour
 {
-    public GameObject knifeBlade;
-    public GameObject knifeHandle;
+    public GameObject knife;
     public GameObject knifeHand;
     public bool isChopping = false;
     public bool isMovingDown = false;
@@ -25,20 +24,18 @@ public class ChopScript : MonoBehaviour
         {
             if (isMovingDown)
             {
-                knifeBlade.transform.Translate(Vector3.down * speed * Time.deltaTime);
-                knifeHandle.transform.Translate(Vector3.down * speed * Time.deltaTime);
+                knife.transform.Translate(Vector3.down * speed * Time.deltaTime);
                 knifeHand.transform.Translate(Vector3.right * speed * Time.deltaTime);
-                if (knifeBlade.transform.position.y < 0)
+                if (knife.transform.position.y < 0)
                 {
                     isMovingDown = false;
                 }
             }
             else
             {
-                knifeBlade.transform.Translate(Vector3.up * speed * Time.deltaTime);
-                knifeHandle.transform.Translate(Vector3.up * speed * Time.deltaTime);
+                knife.transform.Translate(Vector3.up * speed * Time.deltaTime);
                 knifeHand.transform.Translate(Vector3.left * speed * Time.deltaTime);
-                if (knifeBlade.transform.position.y > 19.99)
+                if (knife.transform.position.y > 19.99)
                 {
                     isChopping = false;
                 }
