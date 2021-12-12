@@ -10,11 +10,11 @@ public class HandScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Move the hand to the left till x = 3 and then to the right till x = 21
+        // Move the hand to the left till x = 5 and then to the right till x = 21
         if (left)
         {
             transform.position += Vector3.left * speed * Time.deltaTime;
-            if (transform.position.x <= 3)
+            if (transform.position.x <= 5)
             {
                 left = false;
             }
