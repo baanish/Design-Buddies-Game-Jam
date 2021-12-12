@@ -185,8 +185,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5072710679002879930, guid: b950b0e601b550a43959394054a124b0, type: 3}
       propertyPath: force
-      value: 1500
+      value: 2000
       objectReference: {fileID: 0}
+    - target: {fileID: 5072710679002879930, guid: b950b0e601b550a43959394054a124b0, type: 3}
+      propertyPath: foodToSpawn.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072710679002879930, guid: b950b0e601b550a43959394054a124b0, type: 3}
+      propertyPath: foodToSpawn.Array.data[3]
+      value: 
+      objectReference: {fileID: 1365972305530614427, guid: e562ff59b6d755f418a2a0649e2b1388, type: 3}
     - target: {fileID: 5072710679002879931, guid: b950b0e601b550a43959394054a124b0, type: 3}
       propertyPath: m_RootOrder
       value: 10
