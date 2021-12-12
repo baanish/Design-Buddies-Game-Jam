@@ -49,4 +49,4 @@ MonoBehaviour:
   - {fileID: 8006943028138205202, guid: 74f0d11fdde5dc14e8ff7e15b84512ca, type: 3}
   timeBetweenFoods: 1
   destoryTime: 8
-  force: 0
+  force: 1

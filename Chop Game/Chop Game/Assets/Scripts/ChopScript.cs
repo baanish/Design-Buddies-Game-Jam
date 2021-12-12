@@ -27,7 +27,7 @@ public class ChopScript : MonoBehaviour
             {
                 knifeBlade.transform.Translate(Vector3.down * speed * Time.deltaTime);
                 knifeHandle.transform.Translate(Vector3.down * speed * Time.deltaTime);
-                knifeHand.transform.Translate(Vector3.down * speed * Time.deltaTime);
+                knifeHand.transform.Translate(Vector3.right * speed * Time.deltaTime);
                 if (knifeBlade.transform.position.y < 0)
                 {
                     isMovingDown = false;
@@ -37,7 +37,7 @@ public class ChopScript : MonoBehaviour
             {
                 knifeBlade.transform.Translate(Vector3.up * speed * Time.deltaTime);
                 knifeHandle.transform.Translate(Vector3.up * speed * Time.deltaTime);
-                knifeHand.transform.Translate(Vector3.up * speed * Time.deltaTime);
+                knifeHand.transform.Translate(Vector3.left * speed * Time.deltaTime);
                 if (knifeBlade.transform.position.y > 19.99)
                 {
                     isChopping = false;

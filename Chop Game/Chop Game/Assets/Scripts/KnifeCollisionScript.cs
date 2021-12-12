@@ -9,7 +9,7 @@ public class KnifeCollisionScript : MonoBehaviour
         Debug.Log("Collision");
         if (collision.gameObject.tag == "Veggie")
         {
-            Debug.Log("Veggie has been chopped");
+            Debug.Log("Veggie has been chopped");            
         }
         if (collision.gameObject.tag == "Hand")
         {
