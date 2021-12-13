@@ -5,24 +5,31 @@ using UnityEngine;
 public class HandScript : MonoBehaviour
 {
     private bool left = true;
-    public float speed = 3.0f;
+    private Rigidbody rb;
+    public float speed;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     // Update is called once per frame
     void Update()
     {
-        // Move the hand to the left till x = 5 and then to the right till x = 21
+        // Move the hand to the left till x = 11 and then to the right till x = 18
         if (left)
         {
-            transform.position += Vector3.left * speed * Time.deltaTime;
-            if (transform.position.x <= 5)
+            rb.AddForce(Vector3.left * speed * Time.deltaTime);
+            if (transform.position.x <= 11)
             {
                 left = false;
             }
         }
         else
         {
-            transform.position += Vector3.right * speed * Time.deltaTime;
-            if (transform.position.x >= 21)
+            rb.AddForce(Vector3.right * speed * Time.deltaTime);
+            if (transform.position.x >= 18)
             {
                 left = true;
             }
