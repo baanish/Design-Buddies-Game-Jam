@@ -15,7 +15,7 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
-
+        Time.timeScale = 1;
         currentTime = Time.time;
         x = myTime; 
 
