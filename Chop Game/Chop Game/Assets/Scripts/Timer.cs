@@ -7,7 +7,8 @@ public class Timer : MonoBehaviour
 {
 
     [SerializeField] Text timer;
-    public float myTime;
+     [SerializeField]float myTime;
+    public float showTime;
 
     float currentTime;
     float x  ;
@@ -27,7 +28,7 @@ public class Timer : MonoBehaviour
 
         myTime -= Time.time;
 
-        
+        showTime = myTime;
         
 
         timer.text = Mathf.Round(myTime).ToString();
