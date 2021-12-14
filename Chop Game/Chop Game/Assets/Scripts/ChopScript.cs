@@ -14,6 +14,7 @@ public class ChopScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        knifeHand = GameObject.Find("UpperArm.R");
         // on press space move all the objects down by 20 units and then back up by 20 units
         if (Input.GetKeyDown(KeyCode.Space) && !isChopping)
         {
