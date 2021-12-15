@@ -7,7 +7,8 @@ public class Timer : MonoBehaviour
 {
 
     [SerializeField] Text timer;
-     [SerializeField]float myTime;
+    [SerializeField] float myTime;
+    
     public float showTime;
 
     float currentTime;
@@ -26,7 +27,7 @@ public class Timer : MonoBehaviour
     {
         currentTime = Time.time ;
 
-        myTime -= Time.time;
+        myTime -= Time.timeSinceLevelLoad;
 
         showTime = myTime;
         

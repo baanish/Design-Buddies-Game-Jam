@@ -7,34 +7,38 @@ public class GameManager : MonoBehaviour
 {
 
     [SerializeField] GameObject timer;
-    [SerializeField] GameObject timeUpPanel;
+    [SerializeField] GameObject pausePanel;
 
 
-    bool isPauseActive;
+
+
     Timer myTimer;
 
     void Start()
     {
         myTimer = timer.GetComponent<Timer>();
 
-        
+
+
     }
 
     void Update()
     {
         TimeUp();
-        
+        Pause();
 
-        
+
+
 
     }
 
     void TimeUp()
     {
-        if(myTimer.showTime <= 0)
+        if (myTimer.showTime <= 0)
         {
-            Time.timeScale = 0;
-            timeUpPanel.SetActive(true);
+
+            SceneManager.LoadScene("Time up");
+
         }
     }
 
@@ -49,6 +53,22 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(1);
         Time.timeScale = 1;
 
+    }
+
+    void Pause()
+    {
+        if(Input.GetKey(KeyCode.Escape))
+        {
+
+            Time.timeScale = 0;
+            pausePanel.SetActive(true);
+        }
+    }
+
+    public void Rusume()
+    {
+        Time.timeScale = 1;
+        pausePanel.SetActive(false);
     }
 
 }
