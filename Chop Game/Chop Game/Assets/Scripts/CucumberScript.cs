@@ -42,6 +42,7 @@ public class CucumberScript : MonoBehaviour
                 GameObject spawnedAubergine = Instantiate(aubergine, transform.position, transform.rotation) as GameObject;
                 spawnedAubergine.transform.eulerAngles = new Vector3(spawnedAubergine.transform.eulerAngles.x, spawnedAubergine.transform.eulerAngles.y + 180, spawnedAubergine.transform.eulerAngles.z);
                 spawnedAubergine.gameObject.GetComponent<AubergineScript>().nextChop = nextChop;
+                hand = GameObject.Find("Player_Arms_Parsnip");
                 Transform[] handTransforms = hand.GetComponentsInChildren<Transform>();
                 Transform[] aubergineHandTransforms = aubergineHand.GetComponentsInChildren<Transform>();
                 // set the transform.rotation from hand to aubergineHand
@@ -49,12 +50,7 @@ public class CucumberScript : MonoBehaviour
                 {
                     handTransforms[i].transform.rotation = aubergineHandTransforms[i].transform.rotation;
                 }
-
-
             }
-
         }
-
-        
     }
 }

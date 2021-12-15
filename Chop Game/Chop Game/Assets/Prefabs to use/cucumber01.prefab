@@ -99,7 +99,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 120
+  m_Constraints: 124
   m_CollisionDetection: 0
 --- !u!64 &648006223629248799
 MeshCollider:
@@ -129,8 +129,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cutFruit: {fileID: 8833992565734746213, guid: 20b4565fa84946c4d89c145396bd92a7, type: 3}
   force: 10
-  fruitHealth: 2
+  fruitHealth: 5
   aubergine: {fileID: 4882262688091604185, guid: a35e1ba48610ac8499cf5eceea6a7f02, type: 3}
+  hand: {fileID: 4442870932862583300, guid: b4061f9bb7ca445419d3bf89374ea686, type: 3}
+  aubergineHand: {fileID: 7260958332100730276, guid: d74749f6c02b94f40a3bb834efd4742b, type: 3}
   nextChop: 0
   chopRate: 0.5
   xOffset: 0
