@@ -238,6 +238,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 845620770034619051, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
+      propertyPath: m_Text
+      value: Time up
+      objectReference: {fileID: 0}
     - target: {fileID: 8235740053311751542, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -101

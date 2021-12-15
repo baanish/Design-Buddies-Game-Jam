@@ -218,34 +218,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Time up panel
       objectReference: {fileID: 0}
-    - target: {fileID: 401604464426212360, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
-      propertyPath: m_text
-      value: Chop! Chop!
-      objectReference: {fileID: 0}
-    - target: {fileID: 8200192338257470012, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8200192338257470012, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8200192338257470012, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8235740053311751542, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8235740053311751542, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8235740053311751542, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
 --- !u!1 &166984010
@@ -509,8 +481,8 @@ Canvas:
   m_GameObject: {fileID: 408377789}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1453419441}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1

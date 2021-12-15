@@ -864,8 +864,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 1615093561}
     m_Modifications:
     - target: {fileID: 401604464354151242, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 401604464354151242, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
       propertyPath: m_Color.a
       value: 0.99215686
+      objectReference: {fileID: 0}
+    - target: {fileID: 401604464354151242, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 401604464354151242, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 401604464354151242, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 401604464354151243, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
       propertyPath: m_Pivot.x
@@ -981,6 +997,14 @@ PrefabInstance:
     - target: {fileID: 401604464426212360, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
       propertyPath: m_fontSizeBase
       value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 845620770034619051, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
+      propertyPath: m_Text
+      value: PAUSED
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964206005192568234, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
+      propertyPath: m_Text
+      value: RESUME
       objectReference: {fileID: 0}
     - target: {fileID: 8200192338257470013, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
       propertyPath: pausePanel
