@@ -102,7 +102,7 @@ MonoBehaviour:
   fruitHealth: 5
   potato: {fileID: 5913990031743988384, guid: ec2d0d5938477b24c9f08ece85e277d4, type: 3}
   hand: {fileID: 7260958332100730276, guid: d74749f6c02b94f40a3bb834efd4742b, type: 3}
-  potatoHand: {fileID: 4379965876323885866, guid: 19c3480fb578d9542ae9d2f678c9c51a, type: 3}
+  potatoHand: {fileID: 6585745144069705811, guid: 19c3480fb578d9542ae9d2f678c9c51a, type: 3}
   nextChop: 0
   chopRate: 0.5
   xOffset: 0

@@ -8,6 +8,9 @@ public class PotatoScript : MonoBehaviour
     [SerializeField] GameObject cutFruit;
     [SerializeField] float force;
     [SerializeField] int fruitHealth;
+    public GameObject parsnip;
+    public GameObject hand;
+    public GameObject parsnipHand;
 
 
     GameObject spawnedFood;
@@ -32,6 +35,17 @@ public class PotatoScript : MonoBehaviour
             if (fruitHealth == 0)
             {
                 Destroy(gameObject, 0);
+                GameObject spawnedCucumber = Instantiate(parsnip, new Vector3(transform.position.x,transform.position.y,transform.position.z - 4), transform.rotation) as GameObject;
+                spawnedCucumber.transform.eulerAngles = new Vector3(90,0,0);
+                spawnedCucumber.gameObject.GetComponent<ParsnipScript>().nextChop = nextChop;
+                hand = GameObject.Find("Player_Arms_Parsnip");
+                Transform[] handTransforms = hand.GetComponentsInChildren<Transform>();
+                Transform[] cucumberHandTransforms = parsnipHand.GetComponentsInChildren<Transform>();
+                // set the transform.rotation from hand to aubergineHand
+                for (int i = 0; i < handTransforms.Length; i++)
+                {
+                    handTransforms[i].transform.rotation = cucumberHandTransforms[i].transform.rotation;
+                }
             }
 
 

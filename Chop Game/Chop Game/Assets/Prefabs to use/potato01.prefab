@@ -145,6 +145,9 @@ MonoBehaviour:
   cutFruit: {fileID: 6817132573893997234, guid: c1fa9aca8c6addd42a1aaa665c6f88e8, type: 3}
   force: 10
   fruitHealth: 5
+  parsnip: {fileID: 2827355666372685587, guid: f6af3ce5cdd2b314a903b33345fabda5, type: 3}
+  hand: {fileID: 0}
+  parsnipHand: {fileID: 7450803497989069234, guid: e80af7310d7d59a4ca15ba0a6e8c81f4, type: 3}
   nextChop: 0
   chopRate: 0.5
   xOffset: 0

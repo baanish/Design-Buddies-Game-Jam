@@ -109,7 +109,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2827355666372685587}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -147,7 +147,7 @@ MonoBehaviour:
   fruitHealth: 5
   cucumber: {fileID: 9112099317086796616, guid: 9b5ef544fb425f941bdee30c0e2c6236, type: 3}
   hand: {fileID: 0}
-  cucumberHand: {fileID: 4442870932862583300, guid: b4061f9bb7ca445419d3bf89374ea686, type: 3}
+  cucumberHand: {fileID: 6486793148557668733, guid: b4061f9bb7ca445419d3bf89374ea686, type: 3}
   nextChop: 0
   chopRate: 0.5
   xOffset: 0

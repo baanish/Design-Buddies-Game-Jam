@@ -132,7 +132,7 @@ MonoBehaviour:
   fruitHealth: 5
   aubergine: {fileID: 4882262688091604185, guid: a35e1ba48610ac8499cf5eceea6a7f02, type: 3}
   hand: {fileID: 4442870932862583300, guid: b4061f9bb7ca445419d3bf89374ea686, type: 3}
-  aubergineHand: {fileID: 7260958332100730276, guid: d74749f6c02b94f40a3bb834efd4742b, type: 3}
+  aubergineHand: {fileID: 245899938672651997, guid: d74749f6c02b94f40a3bb834efd4742b, type: 3}
   nextChop: 0
   chopRate: 0.5
   xOffset: 0
