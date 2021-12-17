@@ -262,6 +262,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 279.9
       objectReference: {fileID: 0}
+    - target: {fileID: 6964206005192568234, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
+      propertyPath: m_Text
+      value: PLAY AGAIN
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964206005192568234, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 8200192338257470012, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.2
@@ -277,6 +285,26 @@ PrefabInstance:
     - target: {fileID: 8200192338257470012, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -373.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235740053311751540, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235740053311751540, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1825457552}
+    - target: {fileID: 8235740053311751540, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235740053311751540, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235740053311751540, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8235740053311751542, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -730,6 +758,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1825457552 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8235740053311751543, guid: c7b33b1f342fae44386ab437ebc44bef, type: 3}
+  m_PrefabInstance: {fileID: 248570776}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60a482a1a04bf9443979076616d8ce94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1921569057
 GameObject:
   m_ObjectHideFlags: 0
