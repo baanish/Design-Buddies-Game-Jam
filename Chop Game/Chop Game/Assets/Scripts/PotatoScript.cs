@@ -35,7 +35,7 @@ public class PotatoScript : MonoBehaviour
             if (fruitHealth == 0)
             {
                 Destroy(gameObject, 0);
-                GameObject spawnedCucumber = Instantiate(parsnip, new Vector3(transform.position.x,transform.position.y,transform.position.z - 4), transform.rotation) as GameObject;
+                GameObject spawnedCucumber = Instantiate(parsnip, new Vector3(transform.position.x,transform.position.y,transform.position.z ), transform.rotation) as GameObject;
                 spawnedCucumber.transform.eulerAngles = new Vector3(90,0,0);
                 spawnedCucumber.gameObject.GetComponent<ParsnipScript>().nextChop = nextChop;
                 hand = GameObject.Find("Player_Arms_Parsnip");

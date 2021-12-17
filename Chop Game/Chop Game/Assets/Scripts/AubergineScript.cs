@@ -27,6 +27,7 @@ public class AubergineScript : MonoBehaviour
             nextChop = Time.time + chopRate;
             fruitHealth--;
             transform.localScale = new Vector3(100, 20 * fruitHealth, 100);
+            spawnedFood = Instantiate(cutFruit, transform.position + new Vector3(-10.4f * fruitHealth/2, 0, 0), transform.rotation);
             //move this object right by 10.4 units
             xOffset += 10.4f;
             Destroy(spawnedFood, 5);
