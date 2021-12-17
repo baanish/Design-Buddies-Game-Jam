@@ -17,12 +17,13 @@ public class HandScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Move the hand to the left till x = 11 and then to the right till x = 18
+        
         if (left)
         {
             rb.AddForce(Vector3.left * speed * Time.deltaTime);
             if (transform.position.x <= 11)
             {
+                speed = Random.Range(speed - speed / 15, speed + speed / 15);
                 left = false;
             }
         }
@@ -31,6 +32,7 @@ public class HandScript : MonoBehaviour
             rb.AddForce(Vector3.right * speed * Time.deltaTime);
             if (transform.position.x >= 18)
             {
+                speed = Random.Range(speed - speed / 15, speed + speed / 15);
                 left = true;
             }
         }
