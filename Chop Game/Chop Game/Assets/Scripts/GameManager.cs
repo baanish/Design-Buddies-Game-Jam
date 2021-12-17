@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
 
     [SerializeField] GameObject timer;
     [SerializeField] GameObject pausePanel;
-
+    [SerializeField] GameObject score;
+    Text myText;
 
 
 
@@ -17,9 +19,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         myTimer = timer.GetComponent<Timer>();
-
-
-
     }
 
     void Update()
@@ -36,8 +35,14 @@ public class GameManager : MonoBehaviour
     {
         if (myTimer.showTime <= 0)
         {
-
             SceneManager.LoadScene("Time up");
+            // SceneManager.LoadScene("Time up", LoadSceneMode.Additive);
+            // // set the score in the new scene to the score in the game manager
+            // myText = score.GetComponent<Text>();
+            // Debug.Log(myText.text);
+            // Debug.Log(GameObject.Find("Final Score").GetComponent<Text>().text);
+            // GameObject.Find("Final Score").GetComponent<Text>().text = myText.text;
+            // SceneManager.UnloadScene("Main");
 
         }
     }

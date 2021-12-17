@@ -23,7 +23,7 @@ public class KnifeScoring : MonoBehaviour
 
     void Update()
     {
-        myText.text = scoreNumber.ToString();
+        myText.text = "Score: " + scoreNumber.ToString();
     }
 
     private void OnCollisionEnter(Collision obj)

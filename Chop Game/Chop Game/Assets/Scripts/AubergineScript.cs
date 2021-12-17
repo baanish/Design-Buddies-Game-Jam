@@ -21,7 +21,6 @@ public class AubergineScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision obj)
     {
-        Debug.Log("Collision");
         if (obj.gameObject.tag == "Knife" && Time.time > nextChop)
         {
             nextChop = Time.time + chopRate;
