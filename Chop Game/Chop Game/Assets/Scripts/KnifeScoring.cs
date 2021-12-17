@@ -7,14 +7,18 @@ public class KnifeScoring : MonoBehaviour
 {
 
     [SerializeField] GameObject score;
+    [SerializeField] AudioClip[] vegetableCutAudio;
 
     float myTime;
     Text myText;
     int scoreNumber = 0;
+    AudioSource myAudio;
+    int cutAudioNumber;
 
     void Start()
     {
         myText = score.GetComponent<Text>();
+        myAudio = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -27,6 +31,8 @@ public class KnifeScoring : MonoBehaviour
         if(obj.gameObject.CompareTag("Veggie"))
             if(Time.time > myTime + 0.5f)
             {
+                cutAudioNumber = Random.Range(0, vegetableCutAudio.Length);
+                myAudio.PlayOneShot(vegetableCutAudio[cutAudioNumber]);
                 scoreNumber++;
                 myTime = Time.time;
 
